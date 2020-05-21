@@ -29,6 +29,15 @@ exports.resolve = function(identifier,accept) {
         "publicKeyBase58": "EKmHWjiDDeMhEBs75uv86dC89zZ6yTTxEAHkYroJ7wZP"
       } ]
     };
+    examples['did:covid19:12345678'] = {
+      "@context": "https://www.w3.org/2019/did/v1",
+      "id" : "did:covid19:12345678",
+      "publicKey" : [ {
+        "id" : "did:covid19:12345678",
+        "type" : "noneof",
+        "publicKeyBase58": "yourbusiness"
+      } ]
+    };
     var found = examples[identifier];
     if (found) {
       resolve(found);
